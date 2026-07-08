@@ -1,6 +1,6 @@
 # Devanathan KMC Base
 
-This is the consolidated base version of the hydrogen KMC/NEB code. It promotes the current practice implementation into the root package and keeps generated runs, caches, checkpoints, logs, release zips, and analysis products out of the tracked source tree.
+This is the latest base version of the hydrogen KMC/NEB code. It promotes the current practice implementation into the root package and keeps generated runs, caches, checkpoints, logs, release zips, and analysis products out of the tracked source tree.
 
 ## What Is Included
 
@@ -11,7 +11,7 @@ This is the consolidated base version of the hydrogen KMC/NEB code. It promotes 
 - `kmc/incremental_events.py`: impacted-region event rebuilds and Fenwick-weighted event selection support.
 - `Site_unified/`: source-only lattice-site discovery pipeline for parsing orthogonal LAMMPS bicrystal/polycrystal host structures and generating grain-aware bulk/GB KMC site maps.
 - `examples/previously_analyzed/`: analyzed example inputs, including the Sigma5 KMC map files exposed through the `kmc_map_inputs` compatibility symlink.
-- `scripts/`: local, segmented, Hyperion, pulse diagnostic, GCMC bulk, bicrystal, and external-map launchers.
+- `scripts/`: local, segmented, cluster, pulse diagnostic, GCMC bulk, bicrystal, and external-map launchers.
 - `tools/`: postprocessing, cache merge/compact, GCMC sweep, restart preparation, flux/permeability, and barrier-comparison utilities.
 - `tests/`: focused tests for Devanathan boundaries, GCMC behavior, energy-cache keys, external shell handling, and sweep selection.
 
@@ -25,7 +25,7 @@ python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt
 ```
 
-Native LAMMPS-only runs also need a working LAMMPS Python module and library path. On this machine, scripts auto-detect `/Users/rtirunelveli/lammps-29Aug2024/build` when present; otherwise set `LAMMPS_LIB_DIR` and `LAMMPS_PYTHON_PATH`.
+Native LAMMPS-only runs also need a working LAMMPS Python module and library path.
 
 ## Quick Checks
 
