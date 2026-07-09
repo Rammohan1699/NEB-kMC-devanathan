@@ -12,7 +12,7 @@ This is the latest base version of the hydrogen KMC/NEB code. It promotes the cu
 - `Site_unified/`: source-only lattice-site discovery pipeline for parsing orthogonal LAMMPS bicrystal/polycrystal host structures and generating grain-aware bulk/GB KMC site maps.
 - `examples/previously_analyzed/`: analyzed example inputs, including the Sigma5 KMC map files exposed through the `kmc_map_inputs` compatibility symlink.
 - `scripts/`: local, segmented, cluster, pulse diagnostic, GCMC bulk, bicrystal, and external-map launchers.
-- `tools/`: postprocessing, cache merge/compact, GCMC sweep, restart preparation, flux/permeability, and barrier-comparison utilities.
+- `tools/`: postprocessing, cache merge/compact, GCMC sweep, restart preparation, flux/permeability, barrier-comparison utilities, and an EBSD-to-Atomsk mapper.
 - `tests/`: focused tests for Devanathan boundaries, GCMC behavior, energy-cache keys, external shell handling, and sweep selection.
 
 ## Install

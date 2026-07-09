@@ -52,3 +52,18 @@ Site_unified/*.lmp
 Site_unified/*.npz
 Site_unified/*.xyz
 Site_unified/*.txt
+
+# Generated EBSD mapper / Atomsk products. Keep only scripts and example inputs.
+tools/ebsd-mapper/atomsk_output/
+tools/ebsd-mapper/periodicity_*/
+tools/ebsd-mapper/**/Fe.xsf
+tools/ebsd-mapper/**/Normal_data.csv
+tools/ebsd-mapper/**/User_Data.xlsx
+tools/ebsd-mapper/**/final.cfg
+tools/ebsd-mapper/**/final_grains-com.xsf
+tools/ebsd-mapper/**/final_id-size.txt
+tools/ebsd-mapper/**/final_nodes.xsf
+tools/ebsd-mapper/**/final_size-dist.txt
+tools/ebsd-mapper/**/periodicity_report.csv
+tools/ebsd-mapper/**/polycrystal.txt
+tools/ebsd-mapper/**/run_summary.json

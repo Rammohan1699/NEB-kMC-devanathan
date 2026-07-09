@@ -16,7 +16,13 @@ Core Python packages:
 - `scipy`
 - `ase`
 - `mpi4py`
+- `pandas`
+- `openpyxl`
 - `pytest`
+
+The EBSD-to-Atomsk mapper in `tools/ebsd-mapper/` also requires the external
+`atomsk` executable when generating final structure files. Its dry-run mode can
+prepare CSV/XLSX/polycrystal inputs without Atomsk.
 
 ## MPI
 
@@ -50,6 +56,7 @@ Fast source and unit checks:
 python3 -m py_compile kmc/*.py kmc/lammps_only_neb/*.py tools/*.py
 bash -n scripts/run_devanathan_kmc.sh
 bash -n scripts/run_external_pulse50_barrier_diagnostic_pair.sh
+.venv/bin/python tools/ebsd-mapper/atomsk_filtering_mac_periodic.py tools/ebsd-mapper/example_data/grains.csv --x-min 0.79 --x-max 123.86 --y-min 0.10 --y-max 84.89 --min-area 5 --target-width 1000 --periodic-sizing --skip-atomsk --output-dir /tmp/ebsd-mapper-smoke
 ```
 
 Dry-run launchers before long campaigns:
